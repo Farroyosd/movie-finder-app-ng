@@ -1,0 +1,109 @@
+  form{
+    display: flex;
+    justify-content: center;
+  }
+  .formDiv{
+    display: flex;
+    align-items: center;
+    width: 79vw;
+    margin-top: 40px;
+  }
+  .formDiv > input{
+    width: 94%;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 15px;
+    border-bottom: 2px solid #d3d3d3a1;
+    border-top: 2px solid #d3d3d3a1;
+    border-left: 2px solid #d3d3d3a1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .searchBtn{
+    height: 37px;
+    width: 50px;
+    background: #c82333;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #bd2130;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .movieSearchResultsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 100px;
+  }
+  .movieSearchDiv{
+    width: 521px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    margin-bottom:50px
+  }
+  .movieSearchPosterDiv > img{
+    height: 350px;
+    width: 237px;
+  }
+  .movieSearchInfoDiv{
+    margin: 0 10px;
+    position: relative;
+  }
+  .movieSearchBtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+  }
+  .movieSearchP{
+      margin-top: -10px;
+  }
+  .movieSearchPlot{
+    margin-top: 20px;
+}
+.searchError{
+    margin-left: 11vw;
+    color: red;
+  }
+
+@media screen and (max-width:500px){
+    .movieSearchPosterDiv >img{
+        height: 310px;
+        width: 200px;
+    }
+    .movieSearchDiv{
+        width: 410px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .movieSearchPlot{
+        margin-top: -10px;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    .movieSearchTitle{
+        margin-top: 0;
+        padding: 0 5px;
+    }
+    .movieSearchP{
+        padding: 0 5px;
+    }
+    .movieSearchInfoDiv{
+        height: 310px;
+    }
+}
+@media screen and(max-width:500px) {
+    .formDiv{
+        width: 100vw;
+    }
+    
+}

@@ -1,0 +1,117 @@
+.movieDetailsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 10vw;
+}
+.movieDetailsPosterDiv{
+    width: 300px;
+}
+.movieDetailsBtn{
+    height: 35px;
+    width: 100%;
+    background: green;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+.movieDetailsDiv{
+    width: 45vw;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.movieDetailsHeader{
+    background: lightblue;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    
+}
+.movieDetailsHeader > p{
+    margin-left: 10px;
+    color: #004085;
+}
+.movieDetailsBody{
+    padding: 20px;
+}
+.roundInfo span {
+    padding: 5px 15px;
+    text-align: center;
+    color: white;
+    background:green;
+    border: 1px solid lightgreen;
+    border-radius: 15px;
+    text-shadow: 2px 2px 4px black;
+  }
+  .movieDetailsP{
+    margin-top: 50px;
+  }
+  .movieDetailsBtnMobile{
+      display: none;
+  }
+
+
+
+  @media screen and(max-width:910px){
+      .movieDetailsBtn{
+        display: none;
+      }
+      .movieDetailsBtnMobile{
+        display: inline;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        padding: 5px 15px;
+        text-align: center;
+        color: white;
+        background:green;
+        border: 1px solid lightgreen;
+        border-radius: 5px;
+        text-shadow: 2px 2px 4px black; 
+      }
+      .movieDetailsPosterDiv{
+        width: 65vw;
+      }
+      .movieDetailsPosterDiv>img{
+        width: 65vw;
+      }
+      .movieDetailsDiv{
+        width: 65vw;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .movieDetailsContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 10vw;
+      }
+      .roundInfo{
+        display: flex;
+        flex-wrap: wrap;
+      }
+  }
+
+  @media screen and (max-width:414px){
+    .movieDetailsPosterDiv{
+        width: 80vw;
+      }
+      .movieDetailsPosterDiv>img{
+        width: 80vw;
+      }
+      .movieDetailsContainer{
+        margin: 40px 5vw;
+      }
+      .movieDetailsDiv{
+        width: 80vw;
+      }
+      .movieDetailsBody > h1{
+        font-size: 30px;
+        margin: 0;
+      }
+      .movieDetailsP{
+        margin-top: 25px;
+      }
+  }

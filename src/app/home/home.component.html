@@ -1,0 +1,32 @@
+
+ 
+  <form>
+    <div class="formDiv">
+      <input type="text" id="movieSearch" placeholder="Let's find you a movie" aria-label="Search for..." name="searchInput" [(ngModel)]="searchInput"
+      />
+      <span class="input-group-btn">
+            <button class="searchBtn" type="button" (click)="search()">Go!</button>
+          </span>
+    </div>
+  </form>
+  <div *ngIf="searchError === true">
+    <p class="searchError">*Please enter a movie</p>
+  </div>
+  <div *ngIf="searchData.length > 0">
+    <div class="movieSearchResultsDiv">
+      <div *ngFor="let movie of searchData">
+        <div class="movieSearchDiv" key="movie.imdbID">
+          <div class="movieSearchPosterDiv">
+            <img class="poster" src="{{movie.Poster}}" />
+          </div>
+          <div class="movieSearchInfoDiv">
+            <p class="movieSearchTitle"><strong>{{movie.Title}}</strong></p>
+            <p class="movieSearchP">({{movie.Year}})</p>
+            <p class="movieSearchP">{{movie.Type}}</p>
+            <p class="movieSearchPlot">{{movie.Plot}}</p>
+            <button routerLink="details/{{movie.imdbID}}" class="movieSearchBtn">More Information</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

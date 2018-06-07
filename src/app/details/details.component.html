@@ -1,0 +1,29 @@
+<div class="movieDetailsContainer" *ngIf="movieDataDetails.length > 0">
+  <div class="movieDetailsPosterDiv">
+    <img class="posterMovieDetails" src={{movieDataDetails[0].Poster}} />
+    <br/>
+    <button routerLink="/" class="movieDetailsBtn">Go Back</button>
+  </div>
+  <div class="movieDetailsDiv">
+    <div class="movieDetailsHeader">
+      <p>Movie Details</p>
+    </div>
+    <div class="movieDetailsBody">
+      <h1>{{movieDataDetails[0].Title}}</h1>
+      <p>{{movieDataDetails[0].Year}}</p>
+      <div class="roundInfo">
+        <span>{{movieDataDetails[0].Rated}}</span>
+        <span>{{movieDataDetails[0].Runtime}}</span>
+        <span>{{movieDataDetails[0].Genre}}</span>
+      </div>
+      <div class="movieDetailsP">
+        <p>{{movieDataDetails[0].Plot}}</p>
+        <p>Starring: {{movieDataDetails[0].Actors}}</p>
+        <p>{{movieDataDetails[0].Awards}}</p>
+        <p><strong>Metascore:</strong>{{movieDataDetails[0].Metascore}}/100</p>
+        <p><strong>IMDB:</strong>{{movieDataDetails[0].imdbRating}}/10</p>
+      </div>
+    </div>
+    <button routerLink="/" class="movieDetailsBtnMobile">Go Back</button>
+  </div>
+</div>
